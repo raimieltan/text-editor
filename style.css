@@ -1,48 +1,102 @@
-html {
-    font-family: "Helevetica", sans-serif;
-  }
-  
-  body {
-    color: #333;
-    font-weight: 100;
-    max-width: 50em;
-    margin: 0 auto;
-  }
-  
-  div:focus {
-    outline: none;
-  }
-  
-  #heading {
-    font-size: 48px;
-    padding-top: 30px;
-  }
-  
-  #content {
-    padding-top: 10px;
-    font-size: 24px;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
 
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
+
+body {
+  font-family: monospace;
+  background-color: darkgray;
+  cursor: url(https://img.icons8.com/plasticine/2x/cursor.png), auto;
+}
+
+
+.main-content {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.text-editor-header {
+  background-color: gainsboro;
+  padding: 5px;
+}
+
+.text-editor-header .btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.content {
+  min-height: 200px;
+  border: 1px solid gray;
+  border: 0px;
+  padding: 20px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.close-btn{
+  background-color: red; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+
+
+  border-radius: 120px;
+}
+
+
+.minimize-btn {
+  background-color: greenyellow; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+
+  border-radius: 120px;
+}
+
+.button-div{
+  background-color: slategray;
+  padding-left: 5px;
+  padding: 5px 5px;
+  padding-bottom: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.fullscreen-btn {
+  background-color: yellow; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+
+  border-radius: 120px;
+}
+
+.inputs{
+  padding: 3px;
+  border-radius: 50px;
+}
+
+#predictive-button{
+  font-size: large;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.prediction {
+  text-align: center;
+  background-color: white;
+
+}

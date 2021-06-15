@@ -1,23 +1,128 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Text Editor</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-      <h1>Basic Text Editor</h1>
-    <ul>
-        <li><a class="active" href="#bold">Bold</a></li>
-        <li><a href="#italicized">Italicized</a></li>
-        <li><a href="#justify">Justify</a></li>
-   
-    </ul>
- 
-    <div id="content" contenteditable="true"></div>
+<head>
+  <title>Text Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  </body>
+<body>
 
-  <script src="app.js"></script>
+  <div class="main-content">
+
+    <!-- Text editor toolbar -->
+
+    <div class="button-div">
+      <button class="close-btn"></button>
+      <button class="minimize-btn"></button>
+      <button class="fullscreen-btn"></button>
+
+    </div>
+
+    <div class="text-editor-header">
+
+      <button class="btn" type="button" id="btnTest">Save File</button>
+
+      <!-- end of content -->
+
+      <input class="inputs" placeholder="find" id="find-text" />
+      <input class="inputs" placeholder="replace" id="replace-text" />
+
+      <button class="btn" id="search">Search</button>
+
+
+    </div>
+
+    <div class="text-editor-header">
+      <button type="button" class="btn" data-element="bold">
+        <i class="fa fa-bold"></i>
+      </button>
+
+
+      <button type="button" class="btn" data-element="italic">
+        <i class="fa fa-italic"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="underline">
+        <i class="fa fa-underline"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="insertUnorderedList">
+        <i class="fa fa-list-ul"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="insertOrderList">
+        <i class="fa fa-list-ol"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="createLink">
+        <i class="fa fa-link"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="justifyLeft">
+        <i class="fa fa-align-left"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="justifyCenter">
+        <i class="fa fa-align-center"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="justifyRight">
+        <i class="fa fa-align-right"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="justifyFull">
+        <i class="fa fa-align-justify"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="insertImage">
+        <i class="fa fa-image"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="strikeThrough">
+        <i class="fa fa-strikethrough"></i>
+      </button>
+
+      <button type="button" class="btn" data-element="fontSize">
+        <i>fontsize</i>
+
+      </button>
+    </div>
+
+    <!-- end toolbar -->
+
+    <!-- Content -->
+
+
+    <div class='prediction'></div>
+    <div id="text-box" class="content" contenteditable="true">
+
+    </div>
+
+    <!-- <form id="loadfile">
+      <label for="files">Select files:</label>
+      <input type="file" id="inputfile" name="files" multiple><br><br>
+      <input type="submit">
+
+    </form>
+
+    <div id="coded"></div>
+
+    <div id="tree"></div>
+
+    <button id="decoder">decode</button> -->
+    
+    <input id="html-file" type="file" />
+    
+  </div>
+
+
+
+
+</body>
+
+<script src="app.js"></script>
+<script src="https://use.fontawesome.com/a31a3f8384.js"></script>
+
 </html>
