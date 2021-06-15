@@ -87,6 +87,9 @@ document.querySelector('#search').addEventListener('click', () => {
 
     document.querySelector('#text-box').innerHTML = firstHalf + replace + secondHalf
 
+
+
+    
 })
 
 
